@@ -91,3 +91,10 @@ systemctl status kubelet        # kubelet 상태 확인, CNI 가 설치되기 �
 journalctl -u kubelet
 kubectl get pod -A
 ```
+
+## Others
+
+### Master 노드의 taint 제거
+```
+kubectl taint nodes $(nodename) node-role.kubernetes.io/master:NoSchedule-
+```

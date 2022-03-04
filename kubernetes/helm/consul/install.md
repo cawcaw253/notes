@@ -20,12 +20,12 @@ kubectl create ns consul
 
 ### 설치 전 필요 요소 생성
 - 참고
-  - files/config.yaml
-  - files/pv.yaml
+  - install/config.yaml
+  - install/pv.yaml
 
 ### pv 생성
 ```
-k apply -f pv.yaml
+kubectl apply -f pv.yaml
 ```
 
 ### 설치
